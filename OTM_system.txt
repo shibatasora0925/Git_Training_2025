@@ -1,0 +1,22 @@
+@startuml
+left to right direction
+:teacher:
+:student:
+
+rectangle elcampus {
+    (課題をダウンロード)
+    (試験を受ける)
+    (コンテンツ視聴)
+    (お知らせを発行)
+    }
+rectangle universalpassport{
+    (履修登録)
+    (成績確認)
+}
+student --> 履修登録
+student --> 成績確認
+teacher --> お知らせを発行
+student --> 試験を受ける
+student --> 課題をダウンロード
+student --> コンテンツ視聴
+@enduml
