@@ -1,0 +1,6 @@
+@startuml
+MainFunction -> calculate: Calculation Request
+calculate -> getInput: Result request
+getInput --> calculate: Result
+calculate --> MainFunction: Result
+@enduml
