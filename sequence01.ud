@@ -1,0 +1,7 @@
+@startuml
+client -> server: Date Request
+server -> DateBase: Authentication Request
+
+DateBase --> server: Result
+server --> client: Date
+@enduml
